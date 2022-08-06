@@ -1,0 +1,35 @@
+{
+  "id": 3,
+  "title": "Everything Everywhere All at Once",
+  "trailer": "https://www.youtube.com/watch?v=wxN1T1uxQ2g",
+  "picture": "https://m.media-amazon.com/images/M/MV5BYjhmNzA0YjItODc3OC00MzdiLThlNDctNmIwODcxNzUzOTQwXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "rating": 8.3,
+  "totalRatings": "133K",
+  "releaseYear": 2022,
+  "popularity": 12,
+  "popularityChange": -5,
+  "description": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes connecting with the lives she could have led.",
+  "tags": ["Action", "Adventure", "Comedy"],
+  "people": [
+    {
+      "name": "Dan Kwan",
+      "roles": ["Director", "Writer"]
+    },
+    {
+      "name": "Daniel Scheinert",
+      "roles": ["Director", "Writer"]
+    },
+    {
+      "name": "Michelle Yeoh",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Stephanie Hsu",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Ke Huy Quan",
+      "roles": ["Actor"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": 8,
+  "title": "Spider-Man: No Way Home",
+  "trailer": "https://www.youtube.com/watch?v=PUTab3vP8MI",
+  "picture": "https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "rating": 8.3,
+  "totalRatings": "667K",
+  "releaseYear": 2021,
+  "popularity": 33,
+  "popularityChange": 6,
+  "description": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+  "tags": ["Action", "Adventure", "Fantasy"],
+  "people": [
+    {
+      "name": "Jon Watts",
+      "roles": ["Director"]
+    },
+    {
+      "name": "Chris McKenna",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "Eric Sommers",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "Stan Lee",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "Tom Holland",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Zendaya",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Benedict Cumberbatch",
+      "roles": ["Actor"]
+    }
+  ]
+}

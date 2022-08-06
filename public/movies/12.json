@@ -1,0 +1,35 @@
+{
+  "id": 12,
+  "title": "The Unbearable Weight of Massive Talent",
+  "trailer": "https://www.youtube.com/watch?v=x2YHPZMj8r4",
+  "picture": "https://m.media-amazon.com/images/M/MV5BNDM2ODNiMWItOWRkNS00ODE3LWE2OGYtNTZkMDJkOWI1ODMxXkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "rating": 7.1,
+  "totalRatings": "48K",
+  "releaseYear": 2022,
+  "popularity": 22,
+  "popularityChange": -5,
+  "description": "In this action-packed comedy, Nicolas Cage plays Nick Cage, channeling his iconic characters as he's caught between a superfan (Pedro Pascal) and a CIA agent (Tiffany Haddish).",
+  "tags": ["Action", "Comedy", "Crime"],
+  "people": [
+    {
+      "name": "Tom Gormican",
+      "roles": ["Director", "Writer"]
+    },
+    {
+      "name": "Kevin Etten",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "Nicholas Cage",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Pedro Pascal",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Tiffany Haddish",
+      "roles": ["Actor"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": 7,
+  "title": "The Umbrella Academy",
+  "trailer": "https://www.youtube.com/watch?v=hs6alRuY1UU",
+  "picture": "https://m.media-amazon.com/images/M/MV5BMjE2NjYwOTY5OV5BMl5BanBnXkFtZTgwMDE0NDg0NjM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "rating": 8.0,
+  "totalRatings": "217K",
+  "releaseYear": 2019,
+  "popularity": 4,
+  "popularityChange": 34,
+  "description": "A family of former child heroes, now grown apart, must reunite to continue to protect the world.",
+  "tags": ["Action", "Adventure", "Comedy"],
+  "people": [
+    {
+      "name": "Steve Blackman",
+      "roles": ["Creator"]
+    },
+    {
+      "name": "Jeremy Slater",
+      "roles": ["Creator"]
+    },
+    {
+      "name": "Elliot Page",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Tom Hopper",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "David Castaneda",
+      "roles": ["Actor"]
+    }
+  ]
+}

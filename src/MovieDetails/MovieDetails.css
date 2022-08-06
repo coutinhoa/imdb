@@ -1,0 +1,113 @@
+.Movie-details {
+  text-align: center;
+  display: flexbox;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.error {
+  color: white;
+}
+
+.header-movie-details {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.stars-rating {
+  display: flex;
+  justify-content: center;
+}
+
+.star-rating {
+  padding-top: 5px;
+  color: yellow;
+  margin-right: 10px;
+}
+
+.total-ratings {
+  margin: 0;
+  font-weight: bold;
+}
+
+.number-votes {
+  margin: 0;
+  font-size: small;
+}
+
+.ratings {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.rating-title {
+  color: grey;
+  font-weight: bold;
+}
+
+.body-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.images {
+  height: 400px;
+  width: 300px;
+  padding-right: 50px;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 15px;
+}
+
+.tag {
+  border-style: solid;
+  color: white;
+  cursor: pointer;
+  border-color: grey;
+  border-width: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  background-color: transparent;
+  border-radius: 20%/50%;
+}
+
+.roles {
+  color: white;
+  font-weight: bold;
+}
+
+.name {
+  color: rgb(71, 71, 180);
+  padding-left: 10px;
+}
+
+.description {
+  color: white;
+}
+
+.roles-hl {
+  border-top-color: grey;
+  border-top-width: 5px;
+  height: 100%;
+}

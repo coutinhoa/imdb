@@ -1,0 +1,31 @@
+{
+  "id": 2,
+  "title": "The Boys",
+  "trailer": "https://www.youtube.com/watch?v=M1bhOaLV4FU",
+  "picture": "https://m.media-amazon.com/images/M/MV5BMTY2NDY5MTYzOF5BMl5BanBnXkFtZTgwMTcyNTM0NjM@._V1_QL75_UY562_CR35,0,380,562_.jpg",
+  "rating": 8.3,
+  "totalRatings": "398K",
+  "releaseYear": 2019,
+  "popularity": 2,
+  "popularityChange": 0,
+  "description": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
+  "tags": ["Action", "Crime", "Drama"],
+  "people": [
+    {
+      "name": "Eric Kripke",
+      "roles": ["Creator"]
+    },
+    {
+      "name": "Karl Urban",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Jack Quaid",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Anthony Starr",
+      "roles": ["Actor"]
+    }
+  ]
+}

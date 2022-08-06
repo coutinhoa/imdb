@@ -1,0 +1,31 @@
+.App {
+  background-color: black;
+  height: fit-content;
+  width: fit-content;
+}
+
+.header {
+  padding-left: 30px;
+  color: white;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+.header-one {
+  border-left: 5px solid #f5c518;
+  padding-left: 5px;
+}
+
+.header-two {
+  color: grey;
+}
+
+.movies {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 100px;
+  color: white;
+  height: 460px;
+  width: fit-content;
+}

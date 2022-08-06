@@ -1,0 +1,39 @@
+{
+  "id": 5,
+  "title": "The Batman",
+  "trailer": "https://www.youtube.com/watch?v=1NxzG7IGyhQ",
+  "picture": "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "rating": 7.9,
+  "totalRatings": "528K",
+  "releaseYear": 2022,
+  "popularity": 20,
+  "popularityChange": 1,
+  "description": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+  "tags": ["Action", "Crime", "Drama"],
+  "people": [
+    {
+      "name": "Matt Reeves",
+      "roles": ["Director", "Writer"]
+    },
+    {
+      "name": "Peter Craig",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "Bill Finger",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "Robert Pattinson",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Zoe Kravitz",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Jeffrey Wright",
+      "roles": ["Actor"]
+    }
+  ]
+}

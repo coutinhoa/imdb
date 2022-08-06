@@ -1,0 +1,31 @@
+{
+  "id": 10,
+  "title": "Breaking Bad",
+  "trailer": "https://www.youtube.com/watch?v=HhesaQXLuRY",
+  "picture": "https://m.media-amazon.com/images/M/MV5BODFhZjAwNjEtZDFjNi00ZTEyLThkNzUtMjZmOWM2YjQwODFmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+  "rating": 9.5,
+  "totalRatings": "1.8M",
+  "releaseYear": 2008,
+  "popularity": 15,
+  "popularityChange": 3,
+  "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+  "tags": ["Crime", "Drama", "Thriller"],
+  "people": [
+    {
+      "name": "Vince Gilligan",
+      "roles": ["Creator"]
+    },
+    {
+      "name": "Bryan Cranston",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Aaron Paul",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Anna Gunn",
+      "roles": ["Actor"]
+    }
+  ]
+}

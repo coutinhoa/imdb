@@ -1,0 +1,35 @@
+{
+  "id": 11,
+  "title": "The Northman",
+  "trailer": "https://www.youtube.com/watch?v=oMSdFM12hOw",
+  "picture": "https://m.media-amazon.com/images/M/MV5BMzVlMmY2NTctODgwOC00NDMzLWEzMWYtM2RiYmIyNTNhMTI0XkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "rating": 7.2,
+  "totalRatings": "133K",
+  "releaseYear": 2022,
+  "popularity": 19,
+  "popularityChange": -3,
+  "description": "From visionary director Robert Eggers comes The Northman, an action-filled epic that follows a young Viking prince on his quest to avenge his father's murder.",
+  "tags": ["Action", "Adventure", "Drama"],
+  "people": [
+    {
+      "name": "Robert Eggers",
+      "roles": ["Director", "Writer"]
+    },
+    {
+      "name": "Sjon",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "Alexander Skarsgard",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Nicole Kidman",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Claes Bang",
+      "roles": ["Actor"]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 6,
+  "title": "Man vs. Bee",
+  "trailer": "https://www.youtube.com/watch?v=YQ1vN_91KO0",
+  "picture": "https://m.media-amazon.com/images/M/MV5BMGExOWU4YmItMjkxOC00NjdjLTk2ZWEtZGViMGM1ZGFhZmQxXkEyXkFqcGdeQXVyODQyOTY2OTA@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+  "rating": 7.0,
+  "totalRatings": "13K",
+  "releaseYear": 2022,
+  "popularity": 30,
+  "popularityChange": 518,
+  "description": "A man finds himself at war with a bee while housesitting a luxurious mansion. Who will win, and what irreparable damage will be done in the process?",
+  "tags": ["Short", "Comedy", "Family"],
+  "people": [
+    {
+      "name": "Rowan Atkinson",
+      "roles": ["Creator", "Actor"]
+    },
+    {
+      "name": "Will Davies",
+      "roles": ["Creator"]
+    },
+    {
+      "name": "Claudie Blakley",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Jing Lusi",
+      "roles": ["Actor"]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": 4,
+  "title": "The Black Phone",
+  "trailer": "https://www.youtube.com/watch?v=yfJ6YNvVSn0",
+  "picture": "https://m.media-amazon.com/images/M/MV5BOWVmNTBiYTUtZWQ3Yi00ZDlhLTgyYjUtNzBhZjM3YjRiNGRkXkEyXkFqcGdeQXVyNzYyOTM1ODI@._V1_QL75_UX380_CR0,57,380,562_.jpg",
+  "rating": 7.3,
+  "totalRatings": "17K",
+  "releaseYear": 2021,
+  "popularity": 8,
+  "popularityChange": 15,
+  "description": "After being abducted by a child killer and locked in a soundproof basement, a 13-year-old boy starts receiving calls on a disconnected phone from the killer's previous victims.",
+  "tags": ["Horror", "Thriller"],
+  "people": [
+    {
+      "name": "Scott Derrickson",
+      "roles": ["Director", "Writer"]
+    },
+    {
+      "name": "Joe Hill",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "C. Robert Cargill",
+      "roles": ["Writer"]
+    },
+    {
+      "name": "Mason Thames",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Madeleine McGraw",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Ethan Hawke",
+      "roles": ["Actor"]
+    }
+  ]
+}

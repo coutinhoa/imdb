@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "title": "Stranger Things",
+  "trailer": "https://www.youtube.com/watch?v=sBEvEcpnG7k",
+  "picture": "https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UY562_CR35,0,380,562_.jpg",
+  "rating": 8.7,
+  "totalRatings": "1.1M",
+  "releaseYear": 2016,
+  "popularity": 1,
+  "popularityChange": 0,
+  "description": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
+  "tags": ["Drama", "Fantasy", "Horror"],
+  "people": [
+    {
+      "name": "Matt Duffer",
+      "roles": ["Creator"]
+    },
+    {
+      "name": "Ross Duffer",
+      "roles": ["Creator"]
+    },
+    {
+      "name": "Millie Bobby Brown",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Finn Wolfhard",
+      "roles": ["Actor"]
+    },
+    {
+      "name": "Winona Ryder",
+      "roles": ["Actor"]
+    }
+  ]
+}

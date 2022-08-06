@@ -1,0 +1,76 @@
+.moving-picture {
+  width: 200px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.movie_specifications {
+  height: 180px;
+  width: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  background-color: #1a1a1a;
+  border-color: black;
+}
+
+.image {
+  height: 220px;
+  width: 180px;
+}
+
+.star-fill {
+  color: orange;
+  padding-right: 7px;
+}
+.star {
+  padding-left: 40px;
+  cursor: pointer;
+  color: #5799ef;
+}
+
+.details-link {
+  height: 40px;
+  padding-top: 10px;
+}
+
+.title {
+  cursor: pointer;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.whatchlist {
+  text-align: center;
+  font-weight: bold;
+  color: #5799ef;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.08);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.bi bi-play-fill {
+  color: whitesmoke;
+}
+
+.trailer {
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+}
+
+.a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
