@@ -70,6 +70,10 @@
   padding-right: 50px;
 }
 
+.movie-details {
+  padding-top: 7%;
+}
+
 .tags {
   display: flex;
   justify-content: space-evenly;
@@ -92,22 +96,50 @@
   border-radius: 20%/50%;
 }
 
+.description {
+  color: white;
+  padding-bottom: 10px;
+}
+
+.roles-people {
+  border-top-style: solid;
+  border-top-color: grey;
+  border-top-width: 1px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  border-top-width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
 .roles {
   color: white;
   font-weight: bold;
 }
 
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
 .name {
-  color: rgb(71, 71, 180);
+  color: #5799ef;
   padding-left: 10px;
 }
 
-.description {
+.name::before {
+  display: inline-block;
+  margin: 0 0.5rem 0.2rem;
+  content: "";
+  font-size: 1rem;
+  line-height: 0.5rem;
+  padding: 1px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: currentColor;
   color: white;
 }
 
-.roles-hl {
-  border-top-color: grey;
-  border-top-width: 5px;
-  height: 100%;
+.name:first-child::before {
+  display: none;
 }

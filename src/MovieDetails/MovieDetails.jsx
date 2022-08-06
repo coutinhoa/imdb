@@ -1,5 +1,5 @@
 import "./MovieDetails.css";
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 function MovieDetails() {
@@ -17,6 +17,31 @@ function MovieDetails() {
   if (!details) {
     return <h1 className="error">"Movie not found"</h1>;
   }
+
+  const getPeopleRoles = (people) => {
+    let result = [];
+    for (let i = 0; i < people.length; i++) {
+      const person = people[i];
+      for (let j = 0; j < person.roles.length; j++) {
+        const role = person.roles[j];
+        //console.log(role);
+        if (!result.includes(role)) {
+          result.push(role);
+        }
+      }
+    }
+    return result;
+  };
+  const peopleRoles = getPeopleRoles(details.people);
+  //console.log(peopleRoles);
+
+  const getActorsByRole = (role) => {
+    return details.people
+      .filter((item) => {
+        return item.roles.includes(role);
+      })
+      .map((i) => i.name);
+  };
 
   return (
     <div className="Movie-details">
@@ -53,7 +78,7 @@ function MovieDetails() {
         <div>
           <img src={details.picture} alt="item" className="images" />
         </div>
-        <div>
+        <div className="movie-details">
           <div className="tags">
             {details.tags.map((movie_tag, index) => {
               return (
@@ -69,20 +94,20 @@ function MovieDetails() {
           </div>
           <p className="description">{details.description}</p>
           <div>
-            <div>
-              {details.people.map((person, index) => {
-                return (
-                  <>
-                    <div key={index} person={person}>
-                      <span className="roles">{person.roles}</span>
-                      <div className="roles-hl"></div>
-                    </div>
-                    <span className="name">{person.name}</span>
-                    <div className="roles-hl"></div>
-                  </>
-                );
-              })}
-            </div>
+            {peopleRoles.map((role, index) => (
+              <div className="roles-people" key={index}>
+                <span className="roles">{role}</span>
+                <ul>
+                  <li>
+                    {getActorsByRole(role).map((name, index) => (
+                      <span key={index} className="name">
+                        {name}
+                      </span>
+                    ))}
+                  </li>
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </div>
