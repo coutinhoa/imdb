@@ -5,10 +5,23 @@ import { Movie } from "./Movie/Movie";
 function App() {
   const [movies, setMovies] = useState([]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     fetch("/movies.json")
       .then((response) => response.json())
       .then((response) => setMovies(response)); // puts the response into the movies variable
+  }, []);
+  // we are using api now*/
+
+  const fetchMovies = () => {
+    fetch("http://localhost:4100/api/movies")
+      .then((response) => response.json())
+      .then((response) => {
+        setMovies(response);
+      });
+  };
+
+  useEffect(() => {
+    fetchMovies();
   }, []);
 
   return (

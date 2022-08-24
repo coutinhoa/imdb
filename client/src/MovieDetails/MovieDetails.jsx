@@ -5,17 +5,28 @@ import { useParams } from "react-router-dom";
 function MovieDetails() {
   const params = useParams(); //we use useParams when we wanna get the id from the url or other parameter
   const [details, setDetails] = useState();
-  const [error, setError] = useState(false);
+  const [roleDetails, setRoleDetails] = useState();
+
+  const fetchDetails = () => {
+    fetch(`http://localhost:4100/api/movies/${params.id}`)
+      .then((response) => response.json())
+      .then((response) => {
+        setDetails(response);
+      });
+  };
+
+  useEffect(() => {
+    fetchDetails();
+  }, []);
 
   useEffect(() => {
     fetch(`/movies/${params.id}.json`)
       .then((response) => response.json())
-      .then((response) => setDetails(response))
-      .catch((error) => setError(true));
-  }, []);
+      .then((response) => setRoleDetails(response));
+  }, []); //for roles we are still using json
 
   if (!details) {
-    return <h1 className="error">"Movie not found"</h1>;
+    return <h1 className="error">"Loading..."</h1>;
   }
 
   const getPeopleRoles = (people) => {
@@ -32,11 +43,11 @@ function MovieDetails() {
     }
     return result;
   };
-  const peopleRoles = getPeopleRoles(details.people);
+  const peopleRoles = getPeopleRoles(roleDetails.people);
   //console.log(peopleRoles);
 
   const getActorsByRole = (role) => {
-    return details.people
+    return roleDetails.people
       .filter((item) => {
         return item.roles.includes(role);
       })

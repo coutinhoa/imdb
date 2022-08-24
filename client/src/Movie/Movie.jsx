@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Movie.css";
 import { Link } from "react-router-dom";
 import { limitTitle } from "./helpers/limitTitle";
-import MovieDetails from "./../MovieDetails/MovieDetails";
 
 export const Movie = ({ movie }) => {
   //console.log(movie);
