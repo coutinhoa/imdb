@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import "./Movie.css";
 import { Link } from "react-router-dom";
 import { limitTitle } from "./helpers/limitTitle";
+import { MovieType } from "../types/movie";
 
-export const Movie = ({ movie }) => {
+type Props = {
+  readonly movie: MovieType;
+};
+
+export const Movie = ({ movie }: Props) => {
   //console.log(movie);
 
   const [favorite, setFavorite] = useState(false);

@@ -1,4 +1,4 @@
-export const limitTitle = (limit, str) => {
+export const limitTitle = (limit: number, str: string) => {
   let newStr = "";
 
   if (str.length < limit) {

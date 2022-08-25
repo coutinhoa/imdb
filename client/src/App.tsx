@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Movie } from "./Movie/Movie";
+import { MovieType } from "./types/movie";
 
 function App() {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState<MovieType[]>([]);
 
   /*useEffect(() => {
     fetch("/movies.json")
@@ -14,7 +15,7 @@ function App() {
 
   const fetchMovies = () => {
     fetch("http://localhost:4100/api/movies")
-      .then((response) => response.json())
+      .then((response) => response.json() as Promise<MovieType[]>)
       .then((response) => {
         setMovies(response);
       });

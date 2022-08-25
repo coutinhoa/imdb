@@ -1,15 +1,17 @@
 import "./MovieDetails.css";
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { MovieType } from "../types/movie";
+import { Person } from "../types/person";
 
 function MovieDetails() {
   const params = useParams(); //we use useParams when we wanna get the id from the url or other parameter
-  const [details, setDetails] = useState();
-  const [roleDetails, setRoleDetails] = useState();
+  const [details, setDetails] = useState<MovieType>();
+  const [roleDetails, setRoleDetails] = useState<MovieType>();
 
   const fetchDetails = () => {
     fetch(`http://localhost:4100/api/movies/${params.id}`)
-      .then((response) => response.json())
+      .then((response) => response.json() as Promise<MovieType>)
       .then((response) => {
         setDetails(response);
       });
@@ -21,7 +23,7 @@ function MovieDetails() {
 
   useEffect(() => {
     fetch(`/movies/${params.id}.json`)
-      .then((response) => response.json())
+      .then((response) => response.json() as Promise<MovieType>)
       .then((response) => setRoleDetails(response));
   }, []); //for roles we are still using json
 
@@ -29,12 +31,12 @@ function MovieDetails() {
     return <h1 className="error">"Loading..."</h1>;
   }
 
-  const getPeopleRoles = (people) => {
-    let result = [];
+  const getPeopleRoles = (people: Person[]) => {
+    let result: string[] = [];
     for (let i = 0; i < people.length; i++) {
       const person = people[i];
       for (let j = 0; j < person.roles.length; j++) {
-        const role = person.roles[j];
+        const role: string = person.roles[j];
         //console.log(role);
         if (!result.includes(role)) {
           result.push(role);
@@ -43,13 +45,13 @@ function MovieDetails() {
     }
     return result;
   };
-  const peopleRoles = getPeopleRoles(roleDetails.people);
-  //console.log(peopleRoles);
+  const peopleRoles = getPeopleRoles(roleDetails?.people);
+  console.log(peopleRoles);
 
-  const getActorsByRole = (role) => {
+  const getActorsByRole = (role: string): string[] => {
     return roleDetails.people
-      .filter((item) => {
-        return item.roles.includes(role);
+      .filter((element) => {
+        return element.roles.includes(role);
       })
       .map((i) => i.name);
   };
@@ -91,10 +93,10 @@ function MovieDetails() {
         </div>
         <div className="movie-details">
           <div className="tags">
-            {details.tags.map((movie_tag, index) => {
+            {details.tags.map((movie_tag: string, index) => {
               return (
                 <>
-                  <div key={index} movie_tag={movie_tag}>
+                  <div key={index}>
                     <p>
                       <span className="tag">{movie_tag}</span>
                     </p>
