@@ -1,3 +1,5 @@
+//Run using the console for client and server: yarn dev
+
 /* 1. fetch the data on the parent class using useEffect
 we parse the response of the promise to json and only after we get an array do we put it in the movies variables
 

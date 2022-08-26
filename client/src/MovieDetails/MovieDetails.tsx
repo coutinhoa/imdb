@@ -3,11 +3,13 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { MovieType } from "../types/movie";
 import { Person } from "../types/person";
+import { getRoles } from "./utils/getRoles";
+import { getPeopleNameByRole } from "./utils/getPeopleNameByRole";
 
 function MovieDetails() {
   const params = useParams(); //we use useParams when we wanna get the id from the url or other parameter
   const [details, setDetails] = useState<MovieType>();
-  const [roleDetails, setRoleDetails] = useState<MovieType>();
+  const [moviePeople, setMoviePeople] = useState<Person[]>([]);
 
   const fetchDetails = () => {
     fetch(`http://localhost:4100/api/movies/${params.id}`)
@@ -24,37 +26,22 @@ function MovieDetails() {
   useEffect(() => {
     fetch(`/movies/${params.id}.json`)
       .then((response) => response.json() as Promise<MovieType>)
-      .then((response) => setRoleDetails(response));
+      .then((response) => setMoviePeople(response.people));
   }, []); //for roles we are still using json
 
   if (!details) {
     return <h1 className="error">"Loading..."</h1>;
   }
 
-  const getPeopleRoles = (people: Person[]) => {
-    let result: string[] = [];
-    for (let i = 0; i < people.length; i++) {
-      const person = people[i];
-      for (let j = 0; j < person.roles.length; j++) {
-        const role: string = person.roles[j];
-        //console.log(role);
-        if (!result.includes(role)) {
-          result.push(role);
-        }
-      }
-    }
-    return result;
-  };
-  const peopleRoles = getPeopleRoles(roleDetails?.people);
+  //getting roles and the respective names
+  //first: the function getPeopleRoles gets and array with strings of the roles
+  const peopleRoles = getRoles(moviePeople); //if roleDetails.people is undefined then we pass an empty array
   console.log(peopleRoles);
 
-  const getActorsByRole = (role: string): string[] => {
-    return roleDetails.people
-      .filter((element) => {
-        return element.roles.includes(role);
-      })
-      .map((i) => i.name);
-  };
+  // move to auxiliar function and write tests
+  // make function pure by only depending on its own arguments
+  // PURE FUNCTIONS ONLY DEPEND ON THEIR OWN ARGUMENTS
+  // IF THEY HAVE NO ARGUMNENTS THEY SHOULD NOT DEPEND ON ANYTHING
 
   return (
     <div className="Movie-details">
@@ -93,7 +80,7 @@ function MovieDetails() {
         </div>
         <div className="movie-details">
           <div className="tags">
-            {details.tags.map((movie_tag: string, index) => {
+            {details.tags.map((movie_tag: string, index: number) => {
               return (
                 <>
                   <div key={index}>
@@ -112,11 +99,13 @@ function MovieDetails() {
                 <span className="roles">{role}</span>
                 <ul>
                   <li>
-                    {getActorsByRole(role).map((name, index) => (
-                      <span key={index} className="name">
-                        {name}
-                      </span>
-                    ))}
+                    {getPeopleNameByRole(role, moviePeople).map(
+                      (name, index) => (
+                        <span key={index} className="name">
+                          {name}
+                        </span>
+                      )
+                    )}
                   </li>
                 </ul>
               </div>
