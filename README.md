@@ -51,4 +51,11 @@ yarn dev
 
 2. Access the application through the browser at http://localhost:5173.
 
-3. When clicking on a movie Title, you`ll be redirected to the movie details page.
+
+3. Run the unit tests on the client:
+
+```sh
+yarn test
+```
+
+4. When clicking on a movie Title, you`ll be redirected to the movie details page.
