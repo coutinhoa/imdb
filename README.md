@@ -15,7 +15,7 @@ A small version of IMDB built with React, TypeScript, Node.js, Prisma and Postgr
 1. Clone this project to your computer with:
 
 ```sh
-git clone https://github.com/coutinhoa/my-imdb
+git clone https://github.com/coutinhoa/my-imdb.git
 ```
 
 2. Move to the project root directory and install the client and server packages:
