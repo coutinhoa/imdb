@@ -9,7 +9,17 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/movies", async (req: Request, res: Response) => {
-  const movies = await prisma.movie.findMany();
+  let movies = await prisma.movie.findMany();
+
+  // find out if we have a search term
+  let search = req.query.search;
+  //if yes then filter the movies
+  if (search) {
+    movies = movies.filter(
+      (movie) => movie.title.toLowerCase() === search?.toString().toLowerCase()
+    );
+  }
+
   res.json(movies);
 });
 
