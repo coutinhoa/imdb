@@ -1,7 +1,7 @@
 # My IMDB
 A small version of IMDB built with React, TypeScript, Node.js, Prisma and PostgreSQL.
 
-![imdb_top_movies](https://user-images.githubusercontent.com/104270514/188314689-cdda48de-b754-467c-9564-023f5c253954.jpg)
+![imdb_top_movies](https://user-images.githubusercontent.com/104270514/189539293-1426ef75-ee1c-40ac-931e-0aa1633d45a8.jpg)
 
 ![imdb_details_page](https://user-images.githubusercontent.com/104270514/188314686-c990616f-59f7-4241-8b04-7622685f79fa.jpg)
 
